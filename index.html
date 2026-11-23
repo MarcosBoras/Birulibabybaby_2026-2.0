@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terraria Quiz - Teste seus conhecimentos!</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="quiz-container">
+        <header>
+            <h1>🌳 Terraria Quiz ⚔️</h1>
+            <p id="progress">Pergunta 1 de 10</p>
+        </header>
+
+        <main id="quiz-box">
+            <div id="question-container">
+                <h2 id="question-text">Carregando pergunta...</h2>
+                <div id="options-container" class="options-grid">
+                    <!-- Os botões das alternativas serão inseridos via JS -->
+                </div>
+            </div>
+
+            <div id="feedback-container" class="hidden">
+                <p id="feedback-text"></p>
+                <button id="next-btn" class="btn-primary">Próxima Pergunta ➔</button>
+            </div>
+        </main>
+
+        <section id="result-box" class="hidden">
+            <h2>🏆 Fim de Jogo!</h2>
+            <p id="score-text">Você acertou X de 10 perguntas!</p>
+            <p id="rank-text"></p>
+            <button id="restart-btn" class="btn-primary">Jogar Novamente 🔄</button>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
